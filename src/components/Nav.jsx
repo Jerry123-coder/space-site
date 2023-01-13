@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import * as hamburger from "../img/icon-hamburger.svg"
-import * as close from "../img/icon-close.svg"
+import Hamburger from "../img/icon-hamburger.svg"
+import Close from "../img/icon-close.svg"
 
 
 
@@ -25,8 +25,8 @@ const Nav = () => {
     
 
     <img 
-    src={open ? close : hamburger}
-    className='z-20 w-10 h-10 fixed right-5 top-6 cursor-pointer md:hidden' onClick={() => setOpen(!open)} />
+    src={open ? Close : Hamburger}
+    className='z-20 w-8 h-5 fixed right-5 top-6 cursor-pointer md:hidden' onClick={() => setOpen(!open)} />
     
     <ul className={`bg-[#ffffff14] backdrop-blur-lg md:pl-10 pr-28 z-10 md:rounded-full md:static fixed top-0 right-0 md:h-auto h-screen duration-500 ease-out ${!open ? 'right-[-100%]' : 'right-0'}`}>
         {
